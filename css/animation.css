@@ -1,0 +1,35 @@
+.animation-fadein {
+  opacity: 0;
+}
+
+.animation-fadein.animation-visible {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.animation-slidein-right {
+  transform: translateX(-50px);
+}
+
+.animation-slidein-right.animation-visible {
+  transform: translateX(0);
+  transition: transform 750ms ease-out;
+}
+
+.animation-slidein-left {
+  transform: translateX(50px);
+}
+
+.animation-slidein-left.animation-visible {
+  transform: translateX(0);
+  transition: transform 750ms ease-out;
+}
+
+.animation-slidein-up {
+  transform: translateY(50px);
+}
+
+.animation-slidein-up.animation-visible {
+  transform: translateY(0);
+  transition: transform 750ms ease-out;
+}

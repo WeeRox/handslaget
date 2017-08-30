@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#hero {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#hero img {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#hero h1 {
+  font-family: 'Lily Script One', cursive;
+  font-size: 100px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section {
+  margin: 50px;
+  box-sizing: border-box;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+
+section > div {
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section > div.image img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+section > div.image.right img {
+  float: left;
+}
+
+section > div.image.left img {
+  float: right;
+}
+
+section > div.text div {
+  max-width: 400px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section > div.text div h2 {
+  font-family: 'Nunito', sans-serif;
+}
+
+section > div.text div p {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+section > div.text div * {
+  padding: 0;
+  margin: 0;
+}
+
+section > div.text.right div {
+  text-align: left;
+  float: left;
+  margin: 10px 0 10px 50px;
+}
+
+section > div.text.left div {
+  text-align: right;
+  float: right;
+  margin: 10px 50px 10px 0;
+}
+
+footer {
+  height: 300px;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #383838;
+}
+
+#map {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+#contact {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+#contact-info {
+  position: absolute;
+  top: 0;
+}
+
+#hours {
+  position: absolute;
+  bottom: 0;
+}
+
+#contact * {
+  color: white;
+  display: block;
+  font-family: 'Quicksand', monospace;
+  font-size: 32px;
+  margin: 0;
+}
+
+#contact-info *, #hours * {
+  margin: 5px;
+}
+
+.whitespace {
+  white-space: normal;
+}
+
+.no-whitespace {
+  white-space: nowrap;
+}
+
+@media (max-width: 950px) {
+  footer {
+    height: auto;
+  }
+
+  #contact {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #contact-info {
+    position: relative;
+  }
+
+  #hours {
+    position: relative;
+    padding: 50px 0;
+  }
+
+  #map {
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 785px) {
+  section {
+    height: auto;
+  }
+
+  section > div {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 50px;
+  }
+
+  section > div.text div {
+    width: 100%;
+    text-align: left !important;
+    position: relative;
+    transform: none;
+    float: none !important;
+  }
+
+  section > div.image img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    transform: none;
+    float: none !important;
+  }
+}
+
+@media (max-width: 630px) {
+  #hero h1 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 60px;
+  }
+
+  #contact * {
+    font-size: 24px;
+  }
+}
