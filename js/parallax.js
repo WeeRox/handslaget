@@ -10,6 +10,6 @@ $(function() {
   }
 
   function parallax() {
-    hero.css("transform", "translateY(" + (-(currScrollTop / 8)) + "px)");
+    hero.css("top", (currScrollTop * 0.5) + "px");
   }
 });
