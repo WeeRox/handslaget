@@ -1,15 +1,12 @@
 $(function() {
-  var hero = $("#hero img");
-  var currScrollTop;
-
   if (!Modernizr.touchevents) {
     $(window).scroll(function() {
-      currScrollTop = $(this).scrollTop();
       requestAnimationFrame(parallax);
     });
   }
 
   function parallax() {
-    hero.css("top", (currScrollTop * 0.5) + "px");
+    var scrollTop = $(window).scrollTop();
+     $("#hero img").css("top", Math.round(scrollTop * 0.2) + "px");
   }
 });
