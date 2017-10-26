@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  if (!Modernizr.touchevents {
+  if (!Modernizr.touchevents) {
     $("#hero").parallax(0.15);
   }
 });
